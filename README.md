@@ -1,6 +1,6 @@
 最先端のスタックを勉強するために制作したブログです。
 
-Vercel で公開してみました。→ [デモページ](https://my-dev-blog-six.vercel.app/)
+Vercel で公開してみました。→ [デモページ](https://my-dev-blog-two.vercel.app/)
 
 ## 技術
 
