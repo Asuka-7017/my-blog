@@ -11,6 +11,200 @@ MDX は、Markdown で書いた文章に直接 JSX（React コンポーネント
 
 また、当ブログでは GitHub Flavored Markdown（GFM）で定義されている機能も利用可能です。
 
-さらに、独自の拡張機能として、リンクカード、埋め込みなどの機能を実装しています。
+さらに、独自の拡張機能として、リンクカードなどの機能を実装しています。
 
 以下に利用可能な MDX 記法を示します。
+
+## 見出し
+
+```markdown
+# 見出し 1
+
+## 見出し 2
+
+### 見出し 3
+
+#### 見出し 4
+
+##### 見出し 5
+
+###### 見出し 6
+```
+
+# 見出し 1
+
+## 見出し 2
+
+### 見出し 3
+
+#### 見出し 4
+
+##### 見出し 5
+
+###### 見出し 6
+
+## 装飾
+
+```markdown
+**太字（Bold）**
+_斜体（Italic）_
+**_太字イタリック_**
+~~打消し戦（Strikethrough）~~
+`インラインコード（Inline Code）`
+[テキストリンク](/post/tech/mdx-guide)
+本文中の[リンク](/post/tech/mdx-guide)です。
+```
+
+**太字（Bold）**
+
+_斜体（Italic）_
+
+**_太字イタリック_**
+
+~~打消し戦（Strikethrough）~~
+
+`インラインコード（Inline Code）`
+
+[テキストリンク](/post/tech/mdx-guide)
+
+本文中の[リンク](/post/tech/mdx-guide)です。
+
+## リスト
+
+### リスト
+
+```markdown
+- リスト 1
+- リスト 2
+  - リスト 2-1
+  - リスト 2-2
+```
+
+- リスト 1
+- リスト 2
+  - リスト 2-1
+  - リスト 2-2
+
+### 番号付きリスト
+
+```markdown
+1. リスト 1
+2. リスト 2
+3. リスト 3
+```
+
+1. リスト 1
+2. リスト 2
+3. リスト 3
+
+## 画像
+
+```markdown
+![パソコンを使う会社員](/image/computer_businesswoman1_smile.png)
+```
+
+![パソコンを使う会社員](/image/computer_businesswoman1_smile.png)
+
+## テーブル
+
+```markdown
+| ヘッダ 1 | ヘッダ 2 | ヘッダ 3 |
+| -------- | -------- | -------- |
+| 1-1      | 1-2      | 1-3      |
+| 2-1      | 2-2      | 2-3      |
+| 3-1      | 3-2      | 3-3      |
+```
+
+| ヘッダ 1 | ヘッダ 2 | ヘッダ 3 |
+| -------- | -------- | -------- |
+| 1-1      | 1-2      | 1-3      |
+| 2-1      | 2-2      | 2-3      |
+| 3-1      | 3-2      | 3-3      |
+
+```markdown
+| 左揃え | 中央揃え | 右揃え |
+| :----- | :------: | -----: |
+| 1-1    |   1-2    |    1-3 |
+| 2-1    |   2-2    |    2-3 |
+| 3-1    |   3-2    |    3-3 |
+```
+
+| 左揃え | 中央揃え | 右揃え |
+| :----- | :------: | -----: |
+| 1-1    |   1-2    |    1-3 |
+| 2-1    |   2-2    |    2-3 |
+| 3-1    |   3-2    |    3-3 |
+
+## コードブロック
+
+バッククォート 3 つで囲むことで記述できます。シンタックスハイライトには[Shiki](https://shiki.style/)を使用しています。
+
+````markdown
+```html
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebSite</title>
+  </head>
+  <body>
+    <p>Test</p>
+  </body>
+</html>
+```
+````
+
+```html
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebSite</title>
+  </head>
+  <body>
+    <p>Test</p>
+  </body>
+</html>
+```
+
+## 引用
+
+```markdown
+> 引用文です
+```
+
+> 引用文です
+
+## 脚注
+
+```markdown
+脚注です[^1]。
+
+[^1]: 脚注の内容
+```
+
+脚注です[^1]。
+
+[^1]: 脚注の内容
+
+## 区切り線
+
+```markdown
+区切り線
+```
+
+---
+
+## リンクカード
+
+```markdown
+<LinkCard url="https://nextjs.org/" />
+<LinkCard url="https://qiita.com/" />
+```
+
+<LinkCard url="https://nextjs.org/" />
+<LinkCard url="https://qiita.com/" />
+
+amazon の商品ページリンクの場合は、商品の画像を取得して表示します。
+
+<LinkCard url="https://www.amazon.co.jp/dp/B0FX2GKFP8" />

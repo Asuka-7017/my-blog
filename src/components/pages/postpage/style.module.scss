@@ -76,9 +76,6 @@
 
   strong {
     font-weight: bold;
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-thickness: 2px;
   }
 
   ol,
@@ -173,7 +170,7 @@
       th {
         padding: 1rem;
         font-weight: bold;
-        background: gray;
+        background: #7dd3fc;
       }
     }
     tbody {
@@ -181,18 +178,16 @@
         padding: 1rem;
         overflow-wrap: break-word;
       }
-      tr:nth-child(even) td {
-        background: gray;
-      }
     }
   }
   blockquote {
     margin: 1rem 0;
-    padding: 2.25rem 2rem;
+    position: relative;
+    border-left: 3px solid #bae6fd;
+    padding-left: 10px;
     position: relative;
     width: 100%;
     font-style: normal;
-    border-radius: 0.5rem;
     word-break: break-word;
     quotes: none;
     cite {
@@ -229,12 +224,6 @@
     font-size: 90%;
     border-radius: 0.5rem;
     background-color: #9ca3af;
-  }
-
-  hr {
-    margin: 1rem 0;
-    border-top: 2px solid #f3f4f6;
-    border-radius: 0.5rem;
   }
 
   ruby {

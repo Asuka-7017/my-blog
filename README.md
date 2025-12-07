@@ -1,5 +1,7 @@
 最先端のスタックを勉強するために制作したブログです。
 
+Vercel で公開してみました。→ [デモページ](https://my-dev-blog-six.vercel.app/)
+
 ## 技術
 
 - [Next.js 16](https://nextjs.org/)
