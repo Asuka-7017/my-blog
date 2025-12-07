@@ -3,5 +3,7 @@ categories:
     name: 雑記
   - slug: tech
     name: 技術
-  - slug: history
-    name: 歴史
+  - slug: category1
+    name: カテゴリー1
+  - slug: category2
+    name: カテゴリー2

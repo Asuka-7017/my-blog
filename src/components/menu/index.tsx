@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { useState, useEffect, Suspense } from 'react'
+import { useState, useLayoutEffect, Suspense } from 'react'
 import { usePathname } from 'next/navigation'
 import SearchForm from '@/components/searchform'
 import styles from './style.module.scss'
@@ -9,7 +9,7 @@ export default function Menu() {
   const [isOpen, setIsOpen] = useState(false)
   const pathname = usePathname()
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (isOpen) {
       setIsOpen(false)
     }

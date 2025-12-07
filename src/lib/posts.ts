@@ -68,7 +68,7 @@ export function getPostBySlug(categorySlug: string, slug: string): Post | null {
       frontmatter: data as Post['frontmatter'],
       content,
     }
-  } catch (error) {
+  } catch (e) {
     return null
   }
 }

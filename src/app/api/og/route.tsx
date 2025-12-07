@@ -1,5 +1,5 @@
 import { ImageResponse } from 'next/og'
-import { WEBSITE_NAME, WEBSITE_URL } from '@/lib/getEnvVar'
+import { WEBSITE_NAME } from '@/lib/getEnvVar'
 import { loadGoogleFont } from '@/lib/font'
 
 export const runtime = 'edge'

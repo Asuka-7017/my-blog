@@ -73,7 +73,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function BlogPost({ params }: Props) {
   const { category, slug } = await params
-  const post = await getPostBySlug(category, slug)
+  const post = getPostBySlug(category, slug)
   if (!post) notFound()
   return <PostPage post={post} />
 }

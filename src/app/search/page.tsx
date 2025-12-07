@@ -8,7 +8,7 @@ type Props = {
 
 // メタデータ生成
 export async function generateMetadata({ searchParams }: Props) {
-  const { q, p } = await searchParams
+  const { q } = await searchParams
   const query = q || ''
   return {
     title: `${query} の検索結果`,

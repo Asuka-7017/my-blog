@@ -1,9 +1,9 @@
 declare module '*.yaml' {
-  const value: any
+  const value: string
   export default value
 }
 
 declare module '*.yml' {
-  const value: any
+  const value: string
   export default value
 }
