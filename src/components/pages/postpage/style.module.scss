@@ -1,0 +1,250 @@
+.contents {
+  width: 100%;
+
+  .inner {
+    padding: 4rem 1rem;
+    max-width: 48rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 4rem 0 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.025rem;
+
+    + h2,
+    + h3,
+    + h4,
+    + h5,
+    + h6 {
+      margin-top: 2rem;
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    &:first-child {
+      margin: 0 0 1rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    margin-top: 2.5rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  p,
+  ul,
+  ol,
+  dl {
+    margin: 1rem 0;
+    line-height: 2;
+    line-break: strict;
+    overflow-wrap: break-word;
+    font-feature-settings: 'palt';
+    a {
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  strong {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+  }
+
+  ol,
+  ul {
+    list-style-position: outside;
+    li {
+      position: relative;
+      list-style-type: none;
+      margin: 0 1rem 0.5rem 1rem;
+      line-height: 2;
+      ol,
+      ul {
+        margin: 0 1rem;
+      }
+    }
+    p {
+      margin: 0;
+      line-height: 2;
+    }
+  }
+  ul li {
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 1rem;
+      left: -1rem;
+      width: 0.5rem;
+      height: 2px;
+      background-color: #0ea5e9;
+    }
+  }
+  ol {
+    counter-reset: num;
+    display: table;
+    li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: table-row;
+      counter-increment: table-ol;
+      &::before {
+        counter-increment: num;
+        content: counter(num) '.';
+        display: table-cell;
+        text-align: right;
+        padding-right: 0.5rem;
+        color: #0ea5e9;
+      }
+      &::after {
+        content: '';
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  dl {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+  }
+  dt,
+  dd {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    & > p {
+      margin: 0;
+    }
+  }
+  dt {
+    flex-basis: 25%;
+    &:first-of-type {
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+    &:last-of-type {
+      border-radius: 0;
+    }
+  }
+  dd {
+    flex-basis: 75%;
+  }
+  table {
+    margin: 1rem 0;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border: none;
+    thead {
+      th {
+        padding: 1rem;
+        font-weight: bold;
+        background: gray;
+      }
+    }
+    tbody {
+      td {
+        padding: 1rem;
+        overflow-wrap: break-word;
+      }
+      tr:nth-child(even) td {
+        background: gray;
+      }
+    }
+  }
+  blockquote {
+    margin: 1rem 0;
+    padding: 2.25rem 2rem;
+    position: relative;
+    width: 100%;
+    font-style: normal;
+    border-radius: 0.5rem;
+    word-break: break-word;
+    quotes: none;
+    cite {
+      display: block;
+      color: #6b7280;
+      font-size: 0.87rem;
+      font-style: normal;
+      text-align: right;
+    }
+  }
+
+  pre {
+    margin: 1rem 0;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  pre code {
+    white-space: pre-wrap;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  code {
+    display: inline-block;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    margin: 0 0.25rem;
+    padding: 0rem 0.5rem;
+    font-family: Consolas, Menlo, Monaco, -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Meiryo, monospace;
+    font-size: 90%;
+    border-radius: 0.5rem;
+    background-color: #9ca3af;
+  }
+
+  hr {
+    margin: 1rem 0;
+    border-top: 2px solid #f3f4f6;
+    border-radius: 0.5rem;
+  }
+
+  ruby {
+    rt {
+      text-indent: 0;
+      text-emphasis: none;
+    }
+  }
+
+  section {
+    margin: 4rem 0 1rem;
+  }
+}

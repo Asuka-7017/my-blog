@@ -12,6 +12,9 @@
     "@tailwindcss/typography": "^0.5.19",
     "@types/he": "^1.2.3",
     "@types/js-yaml": "^4.0.9",
+    "@vercel/og": "^0.8.5",
+    "feed": "^5.1.0",
+    "fuse.js": "^7.1.0",
     "gray-matter": "^4.0.3",
     "he": "^1.2.0",
     "js-yaml": "^4.1.1",
@@ -21,6 +24,10 @@
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "rehype-pretty-code": "^0.14.1",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-toc": "^9.0.0",
+    "sass": "^1.94.2",
     "shiki": "^3.19.0"
   },
   "devDependencies": {

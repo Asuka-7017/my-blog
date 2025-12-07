@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import { getAllPosts, getPostBySlug } from '@/lib/posts'
 import { WEBSITE_NAME } from '@/lib/getEnvVar'
-import MDXContent from '@/components/mdx-content'
+import PostPage from '@/components/pages/postpage'
 
 type Props = {
   params: Promise<{
@@ -75,16 +75,5 @@ export default async function BlogPost({ params }: Props) {
   const { category, slug } = await params
   const post = await getPostBySlug(category, slug)
   if (!post) notFound()
-  return (
-    <article className="max-w-3xl mx-auto py-10 px-4">
-      <header className="mb-10 border-b pb-4">
-        <h1 className="text-4xl font-bold mb-4">{post.frontmatter.title}</h1>
-        <div className="flex gap-4 text-gray-500">
-          <time>{post.frontmatter.date}</time>
-          <span>{post.category.name}</span>
-        </div>
-      </header>
-      <MDXContent source={post.content} />
-    </article>
-  )
+  return <PostPage post={post} />
 }

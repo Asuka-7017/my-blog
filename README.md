@@ -1,8 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+最先端のスタックを勉強するために制作したブログです。
 
-## Getting Started
+## 技術
 
-First, run the development server:
+- [Next.js 16](https://nextjs.org/)
+- [React 19.2](https://ja.react.dev/)
+- [Node.js 24](https://nodejs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)：サイト全般のスタイリング
+- [Sass](https://sass-lang.com/)：記事ページ、メニューのスタイリング（CSS Modules）
+- 楽しむ心
+
+## 環境
+
+Node.js をインストールした環境で、開発サーバを動作させてください。
 
 ```bash
 npm run dev
@@ -14,23 +24,38 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## プロジェクトについて
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+プライベートで運用しているブログを公開用に移植したものです。機能は同じです。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ブログの制作を通して、現在主要とされるフロントエンドのライブラリ、フレームワークを学びました。
 
-## Learn More
+## 特徴
 
-To learn more about Next.js, take a look at the following resources:
+- 表示が速い！
+- レスポンシブ対応
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 主な機能
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- MDX による記事コンテンツ管理
+- ファイルべースでカテゴリーによる記事分類
+- 記事一覧ページ
+- 記事の検索
+- サムネイル画像生成
+- RSS XML の自動生成
+- SEO 対策
 
-## Deploy on Vercel
+## 気づき
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+React を使ってみて、開発スピードの向上を感じました。機能や役割ごとにコンポーネントを分割して、保守性や再利用性を高められるのはとても便利です。特に、「何を表示するか」がわかりやすいところが好きです。  
+[React Hooks](https://ja.react.dev/reference/react/hooks) は、もっと勉強する必要があると思いました。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js も、設定などが複雑ではなく、SSG を実現するための機能もわかりやすく、表示の速い Web サイトを作成できて楽しく開発ができました。
+
+他の開発言語やフレームワークを学ぶ時と同じですが、最初はわからなくても、とりあえず手を動かして書いてみようというスタンスで挑みました。HTML や JavaScript の経験があるため 0 からのスタートではないですが、今まで触ってきたフレームワークやライブラリ（Django、ASP.NET、jQuery、etc…）よりも、パズルがはまっていくような感覚で理解しやすかったです。
+
+## 参考サイト
+
+- [TypeScript Deep Dive 日本語版](https://typescript-jp.gitbook.io/deep-dive/)
+- [チュートリアル：三目並べ – React](https://ja.react.dev/learn/tutorial-tic-tac-toe)
+- [[Next.js]App Router 時代の静的サイトの作り方](https://zenn.dev/hiromu617/articles/1ed6811dc6cf26)
