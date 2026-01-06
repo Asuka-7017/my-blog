@@ -25,10 +25,7 @@ export function MDXContent({ source }: Props) {
               [remarkToc, { maxDepth: 3, heading: '目次' }],
             ],
             rehypePlugins: [
-              [
-                rehypePrettyCode,
-                { theme: 'catppuccin-frappe', keepBackgroune: true },
-              ],
+              [rehypePrettyCode, { theme: 'catppuccin-frappe' }],
               rehypeSlug,
             ],
           },
